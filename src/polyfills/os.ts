@@ -3,6 +3,10 @@
 
 import { MOCK_OS, MOCK_IDS, MOCK_CPU, MOCK_MEMORY, MOCK_LOADAVG } from "../constants/config";
 
+export function availableParallelism(): number {
+  return MOCK_CPU.COUNT;
+}
+
 export function hostname(): string {
   return MOCK_OS.HOSTNAME;
 }
